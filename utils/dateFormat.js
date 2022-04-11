@@ -85,8 +85,7 @@ module.exports = (
   //gets the minutes
   let minutes;
   if (dateObj.getMinutes() < 10) {
-    minutes = dateObj.getMinutes();
-    minutes = ("0" + minutes).slice(-2);
+    minutes = ("0" + dateObj.getMinutes()).slice(-2);
   } else {
     minutes = dateObj.getMinutes();
   }
