@@ -73,7 +73,7 @@ module.exports = (
   // check for 24-hr time
   if (dateObj.getHours() > 12) {
     hour = Math.floor(dateObj.getHours() - 12);
-    // hour = ("0" + hour).slice(-2);
+    hour = ("0" + hour).slice(-2);
   } else {
     hour = dateObj.getHours();
   }
